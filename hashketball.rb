@@ -123,7 +123,7 @@ def get_players
 end
 
 def get_player_stat(player_name)
-  
+  player = get_players.find { |player| player[:player_name] == player_name }
 end
 
 def num_points_scored(player_name)
@@ -132,8 +132,7 @@ def num_points_scored(player_name)
 end
 
 def shoe_size(player_name)
-    player = get_players.find { |player| player[:player_name] == player_name }
-    player[:shoe]
+    get_player_stat[:shoe]
 end
 
 def team_colors(team_name)
