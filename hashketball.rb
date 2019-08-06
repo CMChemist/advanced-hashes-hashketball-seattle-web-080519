@@ -123,8 +123,6 @@ def get_players
     players.flatten
 end
 
-get_players()
-
 def num_points_scored(name)
   
 end
