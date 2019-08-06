@@ -124,30 +124,12 @@ end
 
 def num_points_scored(player_name)
   player = get_players.find { |player| player[:player_name] == player_name }
-  binding.pry
   player[:points]
 end
 
 def shoe_size(name)
-  shoe = -1
-  game_hash.each do |team, team_info|
-    team_info.each do |team_attributes, attribute_values|
-      if team_attributes == :players
-        attribute_values.each_index do |index|
-          attribute_values[index].each do |player, stats|
-            if player == name
-              stats.each do |stat_type, value|
-                if stat_type == :shoe
-                  shoe = value
-                end
-              end
-            end
-          end
-        end
-      end
-    end
-  end
-  return shoe
+  
+    
 end
 
 def team_colors(team_name)
