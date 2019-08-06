@@ -122,6 +122,10 @@ def get_players
     players.flatten
 end
 
+def get_player_stat(player_name)
+  
+end
+
 def num_points_scored(player_name)
   player = get_players.find { |player| player[:player_name] == player_name }
   player[:points]
