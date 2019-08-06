@@ -119,11 +119,10 @@ def get_players
     game_hash.each do |teams, team_data|
         players << team_data[:players]
     end
-    #binding.pry
     players.flatten
 end
 
-def num_points_scored(name)
+def num_points_scored(player_name)
   player = get_players.find { |player| player[:player_name] == player_name }
   player[:points]
 end
