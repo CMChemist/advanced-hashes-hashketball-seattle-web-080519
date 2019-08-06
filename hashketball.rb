@@ -123,6 +123,8 @@ def get_players
     players.flatten
 end
 
+get_players()
+
 def num_points_scored(name)
   points = -1
   game_hash.each do |team, team_info|
