@@ -114,7 +114,14 @@ end
 
 #good_practices
 
-
+def get_players
+    players = []
+    game_hash.each do |teams, team_data|
+        players << team_data[:players]
+    end
+    binding.pry
+    players.flatten
+end
 
 def num_points_scored(name)
   points = -1
