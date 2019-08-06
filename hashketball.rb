@@ -158,6 +158,9 @@ def team_names
   return teams
 end
 
+def player_numbers(player_name)
+  get_player_stat(player_name)[:number]
+end
 
 
              
