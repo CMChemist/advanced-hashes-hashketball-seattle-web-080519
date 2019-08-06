@@ -128,8 +128,8 @@ def num_points_scored(player_name)
 end
 
 def shoe_size(name)
-  
-    
+    player = get_players.find { |player| player[:player_name] == player_name }
+    player[:shoe]
 end
 
 def team_colors(team_name)
