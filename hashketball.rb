@@ -119,7 +119,7 @@ def get_players
     game_hash.each do |teams, team_data|
         players << team_data[:players]
     end
-    binding.pry
+    #binding.pry
     players.flatten
 end
 
